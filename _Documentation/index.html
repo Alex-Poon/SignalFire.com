@@ -1,0 +1,397 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Documentation</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+<div class="container">
+	
+	<header class="jumbotron masthead">
+	    <h1>Disillusion <small>Comming Soon page <a href="#changelog" class="label label-info">v1.1.2</a></small></h1>
+	    <h3>Coming Soon/Under Construction page for the creative agency, freelancer or business.</h3>
+	</header>
+	
+	<hr>
+	
+	<div class="row">
+		
+		<div class="span5">
+			<div class="well">
+				<p><strong>Created:</strong> 2012/11/09</p>
+				<p><strong>By:</strong> PixelThrone</p>
+				<p><strong>Email:</strong> <a href="mailto:support@pixelthrone.com">support@pixelthrone.com</a></p>
+				
+			</div>
+		</div>
+		
+		<div class="span6 offset1">
+			<br>
+			<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form. <strong>Thanks so much!</strong></p>
+			<p>
+			  <a href="http://themeforest.net/user/pixelthrone" class="btn">Go to Theme Forest profile</a></p>
+		</div>
+		
+	</div>
+	
+	<hr>
+	
+	<h2>Table of Contents</h2>
+	<br>
+	
+	<div class="subnav">
+    	<ul class="nav nav-pills">
+      		<li><a href="#installation">Installation</a></li>
+      		<li><a href="#customization">Customization</a></li>
+      		<li><a href="#components">Components</a></li>
+      		<li><a href="#compatibility">Compatibility</a></li>
+      		<li><a href="#sources">Sources and Credits</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+      		
+    	</ul>
+	</div>
+	
+</div>
+
+<div role="main" class="container main">
+	
+	<section id="installation">
+		
+		<h3>Installation</h3>
+		<br>
+		<p>Installation is pretty easy.</p>
+		<p>Unzip the HTML folder,  and upload it trough FTP.</p>
+	
+	</section>
+	
+	<hr>
+	
+	<section id="customization">
+		
+		<h3>Customization</h3>
+		<br>
+		<p>You can custom pretty much everything.</p>
+		<br>
+		
+		<h4>Base Color</h4>
+		<p>The template comes with a default orange base color <code>#FB8047</code>.</p>
+		<p>To change the base color, open the CSS file located in <code>css/style.css</code>, scroll to the bottom of the file, and in the section "Base color" find the text <code>#FB8047</code> and replace with your HEX code color.</p>
+		<br>
+
+		<h4>Logo</h4>
+		<p>There are 2 version of logo: the default (black) version and the white version. This is needed to create contrast with the background.<br>
+		  The logo is present in both blocks: home and contact. By default, the home block has the  black version of the logo while the contact block has the white version.<br>
+		  <br>
+		  In the <code>/img/</code> folder you will find 4 logo files:
+          
+      <div class="well">
+          <ul>
+          <li><strong>logo.png</strong> (Default logo (black version))</li>
+          <li><strong>logo-retina.png</strong> (Default logo for <em>retina</em> displays)</li>
+          <li><strong>logo-white.png</strong> (White version)</li>
+          <li><strong>logo-white-retina.png</strong> (White version for <em>retina</em> displays)</li>
+          </ul>
+          </div>
+
+		  If you want to support <strong>High Pixel Density Displays</strong> (aka <em>Retina</em>), you just need to have a <em>retina</em> version of it.<br>
+		  A <em>retina</em> version of the logo is basically the exact same logo twice the size. For example, if your logo image is 200x100px you want to create an image with 400x200px.<br>
+		  <br>
+		  Just save your logo images with the same name as above and you are good to go.<br>
+	  Make sure you update the HTML file with your logo's dimensions. Search for <code>logo</code> in <code>index.html</code> file and replace accordingly: <code>width=&quot;176&quot; height=&quot;41&quot;</code><br>
+	  <br>
+		
+		<h4>Content</h4>
+		<p>There's not much content to edit, but you can always add yours. We provide some dummy content to get you started. Feel free to use it or to change it.</p>
+		<p>The easiest way to change the content, is to open the <code>index.hml</code> file with a visual editor like Dreamweaver.</p>
+		<br>
+		
+		<h4>Contacts</h4>
+		<p>We provide 2 addresses in this theme. However if you want only one address block, it's very easy to remove it.<br>
+		  Find the comment <code>&lt;!-- Begin Address 2 --&gt;</code> and erase or comment everything in between <code>&lt;!-- End Address 2 --&gt;</code></p>
+		<br>
+		
+		<h4>Social Media</h4>
+		<p>Simply add or remove your social profiles.</p>
+		<p>Find the block comment <code>&lt;!-- Social Profiles --&gt;</code> and edit or remove the profiles.</p>
+		<p>Each profile is a <code>&lt;li&gt;</code> element and has a class that identifies the social network.<br>
+	    Just edit the <code>href</code> attribute and replace with your profiles URL</p>
+		<br>
+		
+		<h4>Footer info</h4>
+		<p>Don't forget to change the copyright info.<br>Find the comment block <code>&lt;!-- Copyright info goes here --&gt;</code> and edit it.</p>
+		<br>
+
+		
+		
+	
+	</section>
+	
+	<hr>
+	
+	
+	
+	
+	
+  <section id="components">
+		
+		<h3>Components</h3>
+		<br>
+		<p>We'll guide you trough the available components.</p>
+		<br>
+		
+		<h4>Timer</h4>
+		<p>There's a timer enabled by default.<br>
+	    You can choose to keep it or not, if you dont want it, open the file <code>js/main.js</code> and find the config settings of the timer.<br>
+	    <br>
+	    To disable the timer set the var <code>timer_enabled</code> to <code>false</code>.
+		<br>
+		<br>
+		To set the future date, in the same config settings you'll find the vars for: year, month and day.
+		</p>
+		<p> <br>
+		  
+    </p>
+		<h4>Slideshow</h4>
+		<p>We provide you with a full screen slideshow.<br>
+		  Head to <code>index.html</code> file and find the comment <code>&lt;!-- Begin Slideshow --&gt;</code>. <br>
+		  You can set a video or a gallery of images for the slideshow. 
+    </p><div class="alert">
+      <strong>You can't have the slideshow with  video and images simultaneously.</strong></div>
+		  <p><br>
+		    <strong>Images</strong><br>
+		  <br>
+		  By default, the images of slideshow are active. Add or remove the images you want.<br>
+		  If you dont want a slideshow, declare only one image inside the slideshow object.
+		  <br>
+		  <br>
+		  <strong>Video</strong><br>
+		  <br>
+		  By default, the video is disabled, but you have an example that's commented.<br>
+		  Uncomment the video block and comment or remove the images inside the slideshow.<br>
+		  <br>
+		  You'll need to provide some files in order 
+to get video running:<br>
+<br>
+You should provide a fallback image, just in case the user's browser does not support video. Set this in the <code>poster</code> atribute.
+<br>
+You must provide 3 video formats: <code>mp4</code>, <code>webm</code>, and <code>ogg</code>.
+Set each in the <code>source</code> parameter.<br>
+<br>
+Next you should set the same settings to the <code>object</code> element
+and this is set in the parameter <code>flashVars</code>: <br>
+<br>
+<code>{'playlist':['<strong>/path/to/poster.jpg</strong>',{'url':'<strong>/path/to/video.mp4</strong>','autoPlay':false}]}</code><br>
+<br>
+Please note the dummy values in bold.</p>
+		  <p><br>
+    </p>
+	    <h4>Twitter</h4>
+		<p>This theme comes with a Twitter feed enabled by default.</p>
+		<p>If you want to disable it, open the file <code>js/main.js</code> and find the twiter config settings. Set <code>twitter_enabled</code> to <code>false</code> if you want to disable it.<br>
+		  <br>
+		</p>
+		<h4>Form</h4>
+		<p>This template comes with an AJAX powered form.<br>
+			You can use it to send an e-mail, join a newsletter, or anything you want.</p>
+			<p>The file that's called after submission is <code>form.php</code>. By default this simple PHP script sends you an e-mail everytime there's a new subscription and also writes to a .txt file: <code>emails.txt</code><br>
+			  <br>
+			  Open the <code>form.php</code> file and edit the <code>$to</code> variable with your e-mail. You dont need to change anything if you want the default funcionality.
+			</p>
+			
+			<p>Edit this file to execute your functions.<br>
+			  <br>
+			</p>
+		
+		
+		<div class="alert alert-info">
+        <strong>AJAX Form</strong>
+		<br>If you want to use third-party services like Mailchimp, Campaign Monitor, you should disable ajax form.<br>
+		Find the Newsletter form  config settings in <code>js/main.js</code> and set the variable <code>ajax_form</code> to <code>false</code>
+		</div>
+		
+		<br>
+
+		<h4>Map</h4>
+		<p>This theme comes with a awesome fullscreen Google Maps. By default you have 2 points on the map. <br>
+		  Open 
+	    <code>js/main.js</code> file and find Google Maps config settings. <br>
+	    <br>
+	    To disable the Point 2, just change the value of vars <code>google_maps_latitude_2</code> and <code>google_maps_longitude_2</code> to <code>null</code>
+.<br>
+<br>
+Latitude and Longitude values must be valid, otherwise it will crash your site and a kitten may die.<br>
+<br>
+Next to it, you have the color vars, just set the color in HEX for circle points, landscape and water.<br>
+	</p>
+  </section>
+	
+	<hr>
+	
+	<section id="compatibility">
+		
+		
+		
+		<h3>Compatibility</h3>
+		<br>
+		
+		<p>This template was tested in a vast majority of browsers.</p>
+		<p>If you found a bug, please use the theme comment section or <a href="mailto:support@pixelthrone.com">report it</a> to us describing:</p>
+		
+		<ol>
+			<li>Operating System</li>
+			<li>Browser version</li>
+			<li>What is needed to replicate it</li>
+		</ol>
+		<br>
+		
+		<br>
+		
+		<div class="row">
+			
+			<div class="span3">
+				<h4>Compatible with</h4>
+		
+				<ul>
+					<li>Internet Explorer 8</li>
+					<li>Internet Explorer 9</li>
+					<li>Internet Explorer 10</li>
+					<li>Firefox 3.6+</li>
+					<li>Safari 4+</li>
+					<li>Chrome</li>
+					<li>Opera</li>
+				</ul>
+			</div>
+			
+			<div class="span4 offset1"><img src="img/responsive-illustrations.png"></div>
+			
+			<div class="span3 offset1">
+				<p>This template is responsive and works on all major devices:</p>
+				
+				<ul>
+					<li>Large and small display</li>
+					<li>Smart Phones</li>
+					<li>Tablets</li>
+				</ul>
+				
+			</div>
+			
+			
+			
+		</div>
+	
+	</section>
+	
+	<hr>
+	
+	<section id="sources">
+		
+		<h3>Sources</h3>
+		<br>
+		<p>The following resources are used:</p>
+		<br>
+		
+		<ul>
+			<li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+			<li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+		</ul>
+		<br>
+		
+		<h6>Javascript</h6>
+		<br>
+		<ul>
+			<li><a href="http://jquery.com/">jQuery</a></li>
+			<li><a href="http://jqueryui.com/">jQuery UI</a></li>
+			<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a></li>
+			<li><a href="https://developers.google.com/maps/">Google Maps API</a></li>
+			<li><a href="http://tweet.seaofclouds.com/">Tweet! - jquery.tweet.js</a></li>
+			<li><a href="http://flesler.blogspot.com">jQuery ScrollTo</a> and <a href="http://flesler.blogspot.com">LocalScroll</a></li>
+			<li><a href="http://www.gayadesign.com/diy/queryloader2-preload-your-images-with-ease/">QueryLoader v2</a></li>
+			<li><a href="http://fgnass.github.com/spin.js">spin.js</a></li>
+			<li><a href="http://keith-wood.name/countdown.html">jQuery CountDown</a></li>
+			<li><a href="http://jquery.malsup.com/cycle/">jQuery Cycle</a></li>
+			<li><a href="http://www.aaronvanderzwan.com/maximage/2.0/">Maximage 2</a></li>
+			<li><a href="http://mths.be/placeholder">Placeholder</a></li>
+			<li><a href="https://github.com/tylercraft/jQuery-Retina">jQuery Retina</a></li>
+		</ul>
+		<br>
+		
+		<h6>Fonts</h6>
+		<br>
+		<ul>
+			<li><a href="https://www.google.com/webfonts/specimen/Open+Sans">Open Sans - <em>Google Web Fonts</em></a></li>
+			<li><a href="http://www.google.com/webfonts/specimen/Source+Sans+Pro">Source Sans Pro - Google Web Fonts</a></li>
+		</ul>
+		<br>
+
+		<h6>Icons</h6>
+		<br>
+		<ul>
+			<li><a href="http://www.entypo.com/">Entypo</a></li>
+		</ul>
+		<br>
+		
+		<br>
+	
+	</section>
+
+	<section id="changelog">
+		
+		<h3>Changelog</h3>
+	  <br>
+		<h6>v1.1.2</h6>
+		<ul>
+			<li>Fixed Social Icons issue on Windows browsers</li>
+		</ul>
+		<br>
+        <h6>v1.1</h6>
+		<ul>
+			<li>Improved slideshow with only one image</li>
+		</ul>
+		<br>
+        
+		<h6>v1.0</h6>
+		<ul>
+			<li>Initial version</li>
+		</ul>
+		<br>
+		
+	
+		
+		<br>
+	
+	</section>
+	
+	
+	
+</div>
+
+<footer class="footer container">
+	
+	<p class="pull-right"><a href="#">Back to top</a></p>
+	
+    <p>Designed and developed by <a href="http://pixelthrone.com/">PixelThrone</a></p>
+    <p>&copy; <a href="http://pixelthrone.com/">PixelThrone</a> 2012 - All rights reserved</p>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+<script src="js/google-code-prettify/prettify.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
